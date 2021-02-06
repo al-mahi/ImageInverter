@@ -5,6 +5,19 @@ a photo negative of that bitmap image. This program was developed in and tested 
 linux. It can be built on Windows or Mac OS as well but I have not tested it in those machine.
 The program also tries to detect some common malformed bitmap and ignores processing them.
 
+###### Build
+It is CMake project. To make create directory to store the build files.
+
+`ImageInverter$ mkdir build`
+
+`ImageInverter$cd build`
+
+`build$ cmake ..`
+
+`build$ make`
+
+`./imginv input.bmp`
+
 ###### Usage
 `$./imginv [OPTIONS] FILE` For example `$./imginv input.bmp` will create a photo negative 
 of the bitmap image of `input.bmp`. 
