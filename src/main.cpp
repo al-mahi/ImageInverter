@@ -217,6 +217,8 @@ int invertBMP(string inputPath, string outputPath) {
         return -1;
     }
 
+    if(hasOptionalHeader)
+        delete optional_header_buffer;
     delete buffer;
     return 0;
 }
